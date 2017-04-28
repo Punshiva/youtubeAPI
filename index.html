@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SearchVidz</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet"> 
+		<link rel="stylesheet" href="css/jquery.fancybox.css">
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/jquery.fancybox.pack.js"></script>
+		<script>
+		$(document).ready(function(){
+		$(".fancybox").fancybox();
+		});
+		</script>
+	</head>
+	<body>
+    
+	<div class="tc-videobackground">
+		<video src="video.mp4" autoplay loop></video>
+	</div>
+    
+		<div id="container">
+			<header>
+				<div class="jumbotron mainHeading">
+				<h1>Search<span>Videos</span></h1>
+				<p>Search all Youtube videos</p>
+				</div>
+			</header>
+			<section>
+				<form id="search-form" name="search-form" onsubmit="return search()">
+					<div class="fieldcontainer">
+						<input type="search" id="query" class="search-field" placeholder="Search YouTube...">
+						<input type="submit" name="search-btn" id="search-btn" value="">
+					</div>
+				</form>
+                
+				
+				<ul id="results"></ul>
+				<div id="buttons"></div>
+			</section>
+		</div>
+	</body>
+</html>
